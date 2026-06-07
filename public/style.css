@@ -1,0 +1,35 @@
+body {
+  font-family: "SN Pro", "M PLUS Rounded 1c", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.w800 {
+  font-weight: 800;
+}
+
+.w900 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5cqw, 3rem) !important; ;
+  white-space: nowrap;
+}
+
+h1 img {
+  transform: translateY(-0.05em); 
+}
+
+.card-body {
+  container-type: inline-size;
+}
+
+.countdown-display {
+  font-size: 7.5cqw !important; 
+  white-space: nowrap;
+}
