@@ -40,7 +40,7 @@ html(lang="ja")
                 p.countdown-display.w900.text-danger.mb-0(data-date=pinnedEvent.date) 残り時間を計算中...
               p.card-text.text-muted.mb-0
                 i.bi.bi-calendar3.me-1
-                | #{pinnedEvent.date}
+                | #{pinnedEvent.formattedDate}
         else
           div.card.border-secondary.bg-white
             div.card-body.text-center.py-4
@@ -81,7 +81,7 @@ html(lang="ja")
                         p.countdown-display.w800.text-warning.mb-0(data-date=eventItem.date) 残り時間を計算中…
                       p.card-text.text-muted.small.mb-0
                         i.bi.bi-calendar3.me-1
-                        | #{eventItem.date}
+                        | #{eventItem.formattedDate}
                       
                     form(method="POST" action="/events/delete" class="mt-3")
                       input(type="hidden" name="slot" value=slotNumber)
